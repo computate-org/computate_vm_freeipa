@@ -1,0 +1,19 @@
+---
+VIRT_PACKAGES:
+  - libvirt
+SUPPORTED_DISTROS:
+  - RedHat
+  - CentOS
+  - Fedora
+APP_DOWNLOAD_FILENAME: "CentOS-Stream-8-x86_64-latest-dvd1.iso"
+APP_DOWNLOAD_URL: "http://mirrors.xmission.com/centos/8-stream/isos/x86_64/{{ APP_DOWNLOAD_FILENAME }}"
+APP_DOWNLOAD_PATH: "{{ lookup('env', 'HOME') }}/Downloads/{{ APP_DOWNLOAD_FILENAME }}"
+KICKSTART_PATH: "{{ lookup('env', 'HOME') }}/.ansible/roles/computate.computate_vm_freeipa/templates/"
+VM_ROOT_PASSWORD_ENCRYPTED: 
+VM_USER_PASSWORD_ENCRYPTED: 
+VM_USERNAME: 
+VM_USER_FULL_NAME: 
+VM_TIMEZONE: America/Denver
+VM_HOST_NAME: freeipa
+VM_DISK_SIZE: 100G
+VM_MAC_ADDRESS: "52:54:00:00:01:01"

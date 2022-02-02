@@ -1,0 +1,7 @@
+---
+- name: Install a FreeIPA server on a VM locally
+  connection: local
+  hosts: localhost
+  roles:
+    - computate.computate_vm_freeipa
+
